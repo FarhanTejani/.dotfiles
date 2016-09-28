@@ -32,16 +32,18 @@ done
 echo "##### Installing oh-my-zsh #####"
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
-# Set up vundle
+# Set up vundle and compile YCM
 echo "##### Installing vim packages #####"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --all
 
 # Set zsh as default shell
 echo "##### Setting zsh as default shell #####"
 echo "##### NOTE: THIS REQUIRES SUDO ACCESS #####"
 sudo -s
 (which zsh) >> /etc/shells
-chsh -s $(which zsh)
+chsh -s (which zsh)
 
-install_zsh
+echo "##### Setup Complete! Please restart the shell #####"
