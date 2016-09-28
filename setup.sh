@@ -8,7 +8,7 @@
 
 dir=~/.dotfiles                    # dotfiles directory
 olddir=~/.dotfiles_old             # old dotfiles backup directory
-files="zshrc zshenv oh-my-zsh tmux.conf vimrc vim"    # list of files/folders to symlink in homedir
+files="zshrc zshenv tmux.conf vimrc"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -61,5 +61,17 @@ else
     fi
 fi
 }
+
+# Set up oh-my-zsh
+echo -n "Installing oh-my-zsh ..."
+cd ~/
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+echo "done"
+
+# Set up vundle
+echo -n "Installing vim packages ..."
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+echo "done"
 
 install_zsh
