@@ -104,6 +104,6 @@ export PATH="/usr/local/sbin:$PATH"
 # Commands I like to run from time to time to update my packages
 alias brew-up="brew update && brew upgrade && brew cask update && brew cleanup && brew cask cleanup && brew doctor"
 alias pip-up="pip freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U"
-alias up="brew-up; pip-up; npm update -g;"
+alias up="brew-up; pip-up; npm update -g; upgrade_oh_my_zsh;"
 
 
