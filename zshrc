@@ -60,20 +60,12 @@ source $ZSH/oh-my-zsh.sh
 
 . `brew --prefix`/etc/profile.d/z.sh
 
-# Checkstyle shortcut
-export CHECKSTYLE_FILE_1331=~/Documents/Development/Java/checkstyle-6.2.2.jar
+# Checkstyle shortcuts
 
-checkstyle1331 () {
-    java -jar $CHECKSTYLE_FILE_1331 "$@"
-}
+alias checkstyle1331="java -jar ~/Documents/Development/Java/checkstyle-6.2.2.jar"
 
-export CHECKSTYLE_FILE_1332=~/Documents/Development/Java/checkstyle-6.14.1-all.jar
+alias checkstyle1332="java -jar ~/Documents/Development/Java/checkstyle-6.14.1-all.jar -c ~/Documents/Development/Java/CS1332-checkstyle.xml"
 
-export CS1332_XML=~/Documents/Development/Java/CS1332-checkstyle.xml
-
-checkstyle1332 () {
-    java -jar $CHECKSTYLE_FILE_1332 -c $CS1332_XML "$@"
-}
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
