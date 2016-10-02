@@ -25,7 +25,7 @@ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 echo "##### Creating $olddir for backup of any existing dotfiles #####"
 mkdir -p $olddir
 
-# Move any existing dotfiles in homedir to dotfiles_old directory, then create
+# Move any existing dotfiles in homedir to ~/.dotfiles_old directory, then create
 # symlinks from the homedir to any files in the ~/.dotfiles directory specified in $files
 cd $dir
 for file in $files; do
@@ -35,8 +35,10 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
-# Install vundle plugins and compile YCM
-echo "##### Installing vundle packages #####"
+# Create vim swap directories, install vundle plugins, and compile YCM
+echo "##### Installing vim plugins #####"
+cd ~/.vim
+mkdir backup swap undo
 vim +PluginInstall +qall
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --all
