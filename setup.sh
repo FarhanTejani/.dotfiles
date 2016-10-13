@@ -41,7 +41,7 @@ cd ~/.vim
 mkdir backup swap undo
 vim +PluginInstall +qall
 cd ~/.vim/bundle/YouCompleteMe
-./install.py --all
+./install.py --clang-completer --gocode-completer --tern-completer
 
 # Set zsh as default shell
 echo "##### Setting zsh as default shell #####"
