@@ -2,7 +2,7 @@
 
 ## OS X
 
-To use, first make sure you have an up-to-date system with both Xcode and Apple's developer tools installed:
+To use, first make sure you have an up-to-date system with Apple's developer tools installed:
 
 ```sh
 $ sudo softwareupdate -i -a
