@@ -18,6 +18,7 @@ brew install z
 brew install gradle
 brew install node
 brew install python
+brew install python3
 brew install go
 
 # The best text editor
