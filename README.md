@@ -1,6 +1,6 @@
 # My Dotfiles
 
-## OS X
+## macOS
 
 To use, first make sure you have an up-to-date system with Apple's developer tools installed:
 
