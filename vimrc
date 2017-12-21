@@ -23,6 +23,8 @@ Plugin 'honza/vim-snippets'
 Plugin 'Raimondi/delimitMate.git'
 Plugin 'ervandew/supertab'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " Color Schemes
 Plugin 'flazz/vim-colorschemes'
@@ -58,6 +60,9 @@ set background=dark
 colorscheme molokai
 " colorscheme jellybeans
 " colorscheme badwolf
+
+" airline plugin theme
+let g:airline_theme='molokai'
 
 " use default OS clipboard
 set clipboard=unnamed

@@ -88,6 +88,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/sbin:$PATH"
 
 # Commands I like to run from time to time to update my packages
-alias brew-up="brew update && brew upgrade && brew cleanup -s && brew cask cleanup && brew prune
+alias brew-up="brew update && brew upgrade && brew cleanup -s && brew cask cleanup && brew prune"
 alias pip-up="pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip3 install -U"
 alias up="brew-up; pip-up; npm update -g; upgrade_oh_my_zsh;"

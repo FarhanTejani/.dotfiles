@@ -6,8 +6,8 @@ brew update
 brew upgrade
 
 # Basic command line utilities
+brew install htop
 brew install tree
-brew install cmake
 brew install git
 brew install the_silver_searcher
 brew install tmux
@@ -15,7 +15,6 @@ brew install z
 brew cask install vagrant
 
 # Programming languages
-brew install node
 brew install python3
 pip3 install virtualenv
 brew install go
@@ -30,7 +29,7 @@ brew install zsh
 brew install cmatrix
 
 # Remove outdated versions from the cellar
-brew cleanup
+brew cleanup -s
 brew cask cleanup
 brew linkapps
 
