@@ -1,5 +1,8 @@
 # My Dotfiles
 
+These shell scripts install my most commonly used packages and apply my
+dotfiles.
+
 ## macOS
 
 To use, first make sure you have an up-to-date system with Apple's developer tools installed:
@@ -18,4 +21,4 @@ You may need to restart your computer after executing the commands above. After 
 5. `sh install-osx.sh`
 6. `sh setup.sh`
 
-Enjoy my dotfiles!
+Enjoy my setup!

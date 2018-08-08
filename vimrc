@@ -57,12 +57,10 @@ syntax enable
 
 " colorscheme
 set background=dark
-colorscheme molokai
-" colorscheme jellybeans
-" colorscheme badwolf
+colorscheme onedark
 
 " airline plugin theme
-let g:airline_theme='molokai'
+let g:airline_theme='omedark'
 
 " use default OS clipboard
 set clipboard=unnamed

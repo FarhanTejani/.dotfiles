@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Software I need on every mac system
+# Software I need on every Mac
 
 brew update
 brew upgrade
@@ -12,15 +12,14 @@ brew install git
 brew install the_silver_searcher
 brew install tmux
 brew install z
-brew cask install vagrant
 
-# Programming languages
-brew install python3
-pip3 install virtualenv
-brew install go
+# Text editors
+brew install macvim --with-override-system-vim 
 
-# The best text editor
-brew install macvim --with-override-system-vim --with-python3
+brew tap d12frosted/emacs-plus
+brew install emacs-plus
+brew tap caskroom/fonts
+brew cask install font-source-code-pro
 
 # The best shell
 brew install zsh
@@ -30,7 +29,5 @@ brew install cmatrix
 
 # Remove outdated versions from the cellar
 brew cleanup -s
-brew cask cleanup
-brew linkapps
 
 echo install-osx.sh complete.
